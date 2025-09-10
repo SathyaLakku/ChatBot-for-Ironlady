@@ -54,6 +54,6 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-##Deployment:
+## Deployment:
 
 You can deploy this running locally or using git hub
