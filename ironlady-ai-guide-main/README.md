@@ -1,6 +1,6 @@
 # Welcome to IronLady Chatbot
 
-## Project info
+## Project Demo
 
 **URL**: https://ironlady-ai-guide.lovable.app
 
