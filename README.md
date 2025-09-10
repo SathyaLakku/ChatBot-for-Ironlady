@@ -1,7 +1,3 @@
-# ChatBot-for-Ironlady
-
-# ChatBot-for-Ironlady
-
 # Ironlady AI Guide - ChatBot
 
 ## Overview
