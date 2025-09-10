@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    --primary: 280 85% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 280 70% 55%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 220 25% 20%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 280 30% 92%;
+    --accent-foreground: 220 25% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 280 85% 35%;
+
+    /* Iron Lady Official Brand Colors */
+    --iron-primary: 280 85% 35%;        /* Rich Purple */
+    --iron-secondary: 320 45% 50%;      /* Magenta */
+    --iron-accent: 45 95% 70%;          /* Gold */
+    --iron-dark: 220 25% 15%;           /* Dark Navy */
+    --iron-light: 280 15% 95%;          /* Light Purple */
+    --iron-success: 140 40% 55%;        /* Success Green */
+    
+    /* Iron Lady Brand Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 85% 35%), hsl(320 45% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(280 85% 35%) 0%, hsl(320 45% 50%) 50%, hsl(45 95% 70%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(280 15% 98%));
+    --gradient-accent: linear-gradient(90deg, hsl(280 85% 35%), hsl(280 70% 45%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 95% 70%), hsl(40 85% 60%));
+    
+    /* Sophisticated Shadows */
+    --shadow-brand: 0 20px 40px -12px hsl(280 85% 35% / 0.35);
+    --shadow-glow: 0 0 50px hsl(280 70% 55% / 0.6);
+    --shadow-elevated: 0 25px 80px -20px hsl(280 85% 35% / 0.4);
+    --shadow-soft: 0 8px 30px -8px hsl(280 15% 25% / 0.15);
+    
+    /* Animation Variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Typography Scale */
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 280 70% 65%;
+    --primary-foreground: 220 25% 8%;
+    --primary-glow: 280 60% 75%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 280 25% 25%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 280 70% 65%;
+
+    /* Dark Mode Iron Lady Colors */
+    --iron-primary: 280 70% 65%;
+    --iron-secondary: 320 40% 60%;
+    --iron-accent: 45 90% 75%;
+    --iron-dark: 220 25% 8%;
+    --iron-light: 280 15% 20%;
+    --iron-success: 140 35% 60%;
+    
+    /* Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 70% 65%), hsl(320 40% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(280 70% 65%) 0%, hsl(320 40% 60%) 50%, hsl(45 90% 75%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 25% 10%), hsl(280 15% 15%));
+    --gradient-accent: linear-gradient(90deg, hsl(280 70% 65%), hsl(280 55% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 90% 75%), hsl(40 80% 65%));
+    
+    /* Dark Mode Shadows */
+    --shadow-brand: 0 20px 40px -12px hsl(280 70% 65% / 0.4);
+    --shadow-glow: 0 0 50px hsl(280 60% 75% / 0.7);
+    --shadow-elevated: 0 25px 80px -20px hsl(280 70% 65% / 0.5);
+    --shadow-soft: 0 8px 30px -8px hsl(280 25% 15% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+  
+  /* Iron Lady Brand Animations */
+  @keyframes iron-glow {
+    0%, 100% { box-shadow: var(--shadow-brand); }
+    50% { box-shadow: var(--shadow-glow); }
+  }
+  
+  @keyframes iron-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+  }
+  
+  @keyframes iron-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-primary to-primary/70 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply from-primary/80 to-primary/50;
+  }
+}
